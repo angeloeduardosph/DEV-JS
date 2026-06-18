@@ -43,6 +43,13 @@ if(currencySelect.value == "euro"){
       currency:"BRL"
    }).format(inputCurrencyValue)
 
+   if(currencySelect.value == "libra"){
+      currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB",{
+         style:"currency",
+         currency:"GBP"
+      }).format(inputCurrencyValue / libraToday)
+   }
+   
 
 
 
